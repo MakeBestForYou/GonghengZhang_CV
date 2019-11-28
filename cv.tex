@@ -12,7 +12,7 @@
 
 \usepackage{hyperref}
 \usepackage{geometry}
-\usepackage{multicol}
+\usepackage[UTF8]{ctex}
 % Comment the following lines to use the default Computer Modern font
 % instead of the Palatino font provided by the mathpazo package.
 % Remove the 'osf' bit if you don't like the old style figures.
@@ -39,7 +39,7 @@
 
 \geometry{
   body={6.5in, 8.5in},
-  left=1.0in,
+  left=0.7in,
   top=1.25in
 }
 
@@ -66,7 +66,7 @@
 % Make lists without bullets
 \renewenvironment{itemize}{
   \begin{list}{}{
-    \setlength{\leftmargin}{1.5em}
+    \setlength{\leftmargin}{1.2em}
   }
 }{
   \end{list}
@@ -75,6 +75,7 @@
 \begin{document}
 
 % Place name at left
+\hspace{-0.3in}
 {\huge \name}
 
 % Alternatively, print name centered and bold:
@@ -85,7 +86,7 @@
 \begin{minipage}{0.55\linewidth}
   \href{https://www.sustech.edu.cn/}{Southern University of Science and Technology} \\ 
   \href{http://ess.sustc.edu.cn/}{Department of Earth and Space Science} \\
-  Building 9\#,Chuangyuan\\
+  Building 9\#, Chuangyuan\\
   1088 Xueyuan Avenue, Shenzhen 518055, P.R. China
 \end{minipage}
 \begin{minipage}{0.4\linewidth}
@@ -98,29 +99,26 @@
 \end{minipage}
 
 
-\section*{Personal}
-
-\begin{itemize}
-\item Born on September 9, 1994.
-\item Gangzhou city, JiangXi, China.
-\end{itemize}
+%\section*{Personal}
+%
+%\begin{itemize}
+%\item Born on September 9, 1994.
+%\item Gangzhou city, JiangXi, China.
+%\end{itemize}
 
 
 \section*{Education}
+\vspace{-0.1in}
 \begin{table}[htbp]
-	\centering  % 显示位置为中间
-	\label{table1}  % 用于索引表格的标签
-	%字母的个数对应列数，|代表分割线
-	% l代表左对齐，c代表居中，r代表右对齐
-	\begin{tabular}{ c c c c }
+	\raggedright  % 显示位置为中间	
+	% l代表左对齐，c代表居中，r代表右对齐 %字母的个数对应列数，|代表分割线
+	\begin{tabular}{ l c c c }
 		& & & \\[-6pt]  %可以避免文字偏上来调整文字与上边界的距离
-		B.S.& Geo-information science and technology & Ocean University of China & 2013-2017. \\  
+		\quad B.S. & Geo-information science and technology & Ocean University of China & 2013-2017. \\  
 		& & & \\[-6pt]  %可以避免文字偏上 
-		M.A.& Engineering mechanics & Harbin Institute of Technology & 2017-2019. \\
+		\quad M.A.& Engineering mechanics & Harbin Institute of Technology & 2017-2019. \\
 		& & & \\[-6pt]  %可以避免文字偏上
-		Ph.D.& Engineering mechanics & Southern University of Science and Technology & 2019-now.		
-		
-		
+		\quad Ph.D.& Engineering mechanics & Southern University of Science and Technology & 2019-now.		
 	\end{tabular}
 \end{table}
 
@@ -134,12 +132,12 @@
 %\end{itemize}
 
 
-\section*{Employment}
-
-\begin{itemize}
-\item  china earthquake administration 2017.6--2017.9.
-
-\end{itemize}
+%\section*{Employment}
+%
+%\begin{itemize}
+%\item  china earthquake administration 2017.6--2017.9.
+%
+%\end{itemize}
 
 
 \section*{Publications}
@@ -163,13 +161,25 @@
 %  Probability, 1951.
 %\end{itemize}
 
-
 \section*{Honors}
-\begin{itemize}
-\item 
+\vspace{-0.25in}
+\begin{table}[htbp]
+	\raggedright  % 显示位置为中间	
+	% l代表左对齐，c代表居中，r代表右对齐 %字母的个数对应列数，|代表分割线
+	\begin{tabular}{ l c c c }
+		& & \\[-6pt]  %可以避免文字偏上来调整文字与上边界的距离
+		\quad Outstanding academic dissertation & & Harbin Institute of Technology & \qquad 2019.6 \\
+	    & & \\[-6pt]  %可以避免文字偏上来调整文字与上边界的距离
+		\quad National Scholarship & ￥8000 & Harbin Institute of Technology & \qquad 2018.10 \\ 	 
+		& & \\[-6pt]  %可以避免文字偏上来调整文字与上边界的距离
+		\quad Outstanding Graduates & & Ocean University of China & \qquad 2017.6 \\  
+		& & \\[-6pt]  %可以避免文字偏上 
+		\quad National Encouragement Scholarship & ￥5000 & Ocean University of China & \qquad 2016.10 \\ 
+		& & \\[-6pt]  %可以避免文字偏上
+		\quad National Scholarship & ￥8000 & Ocean University of China & \qquad 2014.10 \\ 	
+	\end{tabular}
+\end{table}
 
-
-\end{itemize}
 
 
 
@@ -179,7 +189,7 @@
 % Footer
 \begin{center}
   \begin{footnotesize}
-    Last updated: \today \\
+%    Last updated: \today \\
     \href{\footerlink}{\texttt{\footerlink}}
   \end{footnotesize}
 \end{center}
